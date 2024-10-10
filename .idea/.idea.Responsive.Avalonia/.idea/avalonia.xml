@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Responsive.Avalonia/BreakpointProvider.axaml" value="SampleApp/SampleApp.csproj" />
+        <entry key="Responsive.Avalonia/Show.axaml" value="SampleApp/SampleApp.csproj" />
+        <entry key="SampleApp/App.axaml" value="SampleApp/SampleApp.csproj" />
+        <entry key="SampleApp/MainWindow.axaml" value="SampleApp/SampleApp.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

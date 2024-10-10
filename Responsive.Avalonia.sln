@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Responsive.Avalonia", "Responsive.Avalonia\Responsive.Avalonia.csproj", "{35F2D3B2-72D1-4614-BC72-78FBF14B3866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "SampleApp\SampleApp.csproj", "{355DA7B1-8823-4BFF-90C9-C123C97C6682}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35F2D3B2-72D1-4614-BC72-78FBF14B3866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F2D3B2-72D1-4614-BC72-78FBF14B3866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F2D3B2-72D1-4614-BC72-78FBF14B3866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F2D3B2-72D1-4614-BC72-78FBF14B3866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355DA7B1-8823-4BFF-90C9-C123C97C6682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355DA7B1-8823-4BFF-90C9-C123C97C6682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355DA7B1-8823-4BFF-90C9-C123C97C6682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355DA7B1-8823-4BFF-90C9-C123C97C6682}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

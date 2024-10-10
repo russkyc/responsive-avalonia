@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:rc="using:Responsive.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SampleApp.MainWindow"
+        Title="SampleApp">
+    <rc:BreakpointProvider>
+        <rc:Show Breakpoint="Xs">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"
+                       FontWeight="Medium" FontSize="14" Text="Visible on Small Screens" />
+        </rc:Show>
+        <rc:Show Breakpoint="Sm">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"
+                       FontWeight="Medium" FontSize="24" Text="Visible on Medium Screens" />
+        </rc:Show>
+        <rc:Show Breakpoint="MdAndUp">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"
+                       FontWeight="Medium" FontSize="38" Text="Visible on Large Screens" />
+        </rc:Show>
+    </rc:BreakpointProvider>
+</Window>

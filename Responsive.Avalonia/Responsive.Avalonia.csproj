@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Russkyc.Responsive.Avalonia</Title>
+        <Authors>russkyc</Authors>
+        <Description>Responsive breakpoints for AvaloniaUI applications</Description>
+        <Copyright>russkyc 2024</Copyright>
+        <PackageTags>avalonia avaloniaui controls responsive</PackageTags>
+        <PackageIcon>PackageIcon.png</PackageIcon>
+        <PackageProjectUrl>https://github.com/russkyc/responsive-avalonia</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/russkyc/responsive-avalonia</RepositoryUrl>
+        <Version>0.1.0</Version>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <IsPackable>true</IsPackable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>none</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Resource Include="PackageIcon.png" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.1.4"/>
+    </ItemGroup>
+
+</Project>
