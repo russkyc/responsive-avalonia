@@ -15,6 +15,16 @@ public partial class Show : Grid
         set => SetValue(BreakpointProperty, value);
     }
 
+    public static readonly StyledProperty<Func<double, bool>> ConditionProperty =
+        AvaloniaProperty.Register<BreakpointProvider, Func<double, bool>>(
+            nameof(Condition));
+
+    public Func<double, bool> Condition
+    {
+        get => GetValue(ConditionProperty);
+        set => SetValue(ConditionProperty, value);
+    }
+
     public static readonly StyledProperty<bool> InvertProperty = AvaloniaProperty.Register<BreakpointProvider, bool>(
         nameof(Invert));
 

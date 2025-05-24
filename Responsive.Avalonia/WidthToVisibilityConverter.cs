@@ -11,9 +11,13 @@ public class WidthToVisibilityConverter : IMultiValueConverter
     {
         if (values[0] is not double width) return true;
         if (values[1] is not Breakpoint breakpoint) return true;
-        if (values[2] is not bool invert) return true;
+        if (values[3] is not bool invert) return true;
+        if (values[2] is Func<double, bool> customCondition)
+        {
+            return customCondition(width) ^ invert;
+        }
         var isVisible = BreakpointConditions.Conditions.TryGetValue(breakpoint, out var condition) &&
-                        condition(width);
-        return invert ? !isVisible : isVisible;
+                        condition(width) ^ invert;
+        return isVisible;
     }
 }

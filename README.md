@@ -15,6 +15,9 @@ to create responsive layouts that adapt to different screen sizes using predefin
 
 ## Features
 
+> [!NOTE]
+> Custom conditions can now be added by using the `Condition` property of the `Show` control. Read more in this section: [Custom Conditions](#custom-conditions).
+
 - **Predefined Breakpoints**: Use predefined breakpoints such as `Xs`, `Sm`, `Md`, `Lg`, `Xl`, and `Xxl`.
 - **Customizable Visibility**: Control the visibility of UI elements based on the current screen width.
 - **Easy Integration**: Simple to integrate into existing AvaloniaUI projects.
@@ -57,7 +60,7 @@ is within the breakpoint.
 </rc:BreakpointProvider>
 ```
 
-### Show Control Properties
+## Show Control Properties
 
 **Breakpoint** - Specifies the breakpoint at which the content should be visible. It is of type `Breakpoint`.
 
@@ -78,8 +81,35 @@ is within the breakpoint.
 | Breakpoint.XlAndUp   | width >= 1920px          |
 | Breakpoint.Xxl       | width >= 2560px          |
 
+**Condition** - A custom condition that can be used to determine the visibility of the content. It is a `Func<double,bool>` delegate
+that returns true if the content should be visible. see the [Custom Conditions](#custom-conditions) section for more details.
+
 **Invert** - A boolean property that inverts the visibility condition. If set to true, the content will be hidden at the
-  specified breakpoint.
+  specified breakpoint. Not that this property is also respected when using the `Condition` property.
+
+## Custom Conditions
+For more granular control, custom conditions can be used instead of the standard breakpoints. As an example, here is a condition to show the element if the width of the breakpoint provider is between 600 and 700 pixels:
+```csharp
+using System;
+
+namespace SampleApp;
+
+public static class CustomBreakpoints
+{
+    // Example implementation of a custom breakpoint for demonstration purposes.
+    public static Func<double,bool> Width600To700Condition => width => width is >= 600 and < 700;
+}
+```
+
+To use this, we can set the `Condition` property of the `Show` control:
+
+```xaml
+<rc:Show Condition="{x:Static sampleApp:CustomBreakpoints.Width600To700Condition}">
+   <TextBlock Text="Visible if width is between 600px and 700px" />
+</rc:Show>
+```
+> [!IMPORTANT]
+> When using custom conditions, the `Breakpoint` property will be ignored.
 
 ## License
 
