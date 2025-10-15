@@ -5,7 +5,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
-        <PackageReleaseNotes>0.1.1 - Added custom conditions for granular breakpoint control.</PackageReleaseNotes>
+        <PackageReleaseNotes>0.2.0 - Added support for responsive orientation mode (Vertical or Horizontal).
+0.1.1 - Added custom conditions for granular breakpoint control.</PackageReleaseNotes>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -18,7 +19,7 @@
         <PackageIcon>PackageIcon.png</PackageIcon>
         <PackageProjectUrl>https://github.com/russkyc/responsive-avalonia</PackageProjectUrl>
         <RepositoryUrl>https://github.com/russkyc/responsive-avalonia</RepositoryUrl>
-        <Version>0.1.1</Version>
+        <Version>0.2.0</Version>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <IsPackable>true</IsPackable>
     </PropertyGroup>

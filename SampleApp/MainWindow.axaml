@@ -10,7 +10,7 @@
     d:DesignHeight="450"
     d:DesignWidth="800"
     mc:Ignorable="d">
-    <rc:BreakpointProvider>
+    <rc:BreakpointProvider Orientation="Vertical">
         <rc:Show Breakpoint="Xs">
             <TextBlock
                 HorizontalAlignment="Center"
