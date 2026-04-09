@@ -1,4 +1,4 @@
-﻿<h2 align="center">Responsive.Avalonia - Use Breakpoints in AvaloniaUI</h2>
+<h2 align="center">Responsive.Avalonia - Use Breakpoints in AvaloniaUI</h2>
 
 <p align="center">
     <img src="https://img.shields.io/nuget/v/Responsive.Avalonia?color=1f72de" alt="Nuget">
@@ -7,6 +7,10 @@
     <img src="https://img.shields.io/github/issues/russkyc/responsive-avalonia">
     <img src="https://img.shields.io/nuget/dt/Responsive.Avalonia">
 </p>
+
+> [!IMPORTANT]  
+> Avalonia now has first class support for advanced [container queries](https://docs.avaloniaui.net/docs/styling/container-queries) which we recommend for conditional styles application. For breakpoints-based layouts, you can use this or the minimal example at the [responsive layouts how to](https://docs.avaloniaui.net/docs/how-to/responsive-layout-how-to) page of the docs.
+> This remains as a community supported implementation, but we also want to acknowledge Avalonia's responsive layout support.
 
 ## Overview
 
